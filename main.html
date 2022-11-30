@@ -1,0 +1,20 @@
+<!DOCTYPE>
+<html>  
+<body>  
+<button name="button" value="OK" type="button" onclick="cl()">log</button>  
+<form action="/action_page.php">
+    <label for="fname">Just type something yo:</label><br>
+    <input type="text" id="fname" value="" ><br><br>
+    <input type="submit" value="Submit" >
+  </form> 
+  <p id = "p1" style="border-width:3px; border-style:solid; border-color:#FF0000; padding: 1em;">void</p>
+<script>  
+function cl(){  
+    var info = document.getElementById('fname').value;
+    console.log(info);
+    document.getElementById("p1").innerHTML = info; 
+}  
+
+</script>  
+</body>
+</html>  
